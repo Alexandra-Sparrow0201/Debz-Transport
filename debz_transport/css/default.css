@@ -1,0 +1,441 @@
+header,
+nav,
+article,
+footer {
+    display: block;
+}
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+/** Page layout**/
+
+body {
+	background-color:#fff; 
+
+}
+
+#container{
+	width:100%;
+	margin:auto;
+	padding:2px;
+	background-color: #fff;
+	border-radius: 0 0 15px 15px;
+}
+
+/*Header*/
+/**header{
+	width:100%;
+	padding: 5px, 10px;
+	margin:auto;
+	text-align: center ;
+}
+
+header h1{
+	font-family: 'Poppins', cursive;
+	font-weight:bold;
+	font-size: 4em;
+	color: #000;
+}**/
+
+.hero-image {
+    background-image: url("../images/seattle_view.jpg");
+    /* Set a specific height */
+    height: 70%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 200px;
+}
+
+.hero-text {
+    text-align: center;
+    /**position: absolute;**/
+    top: 50%;
+    left: 50%;
+    /**transform: translate(-50%, -50%);**/
+    font-family: 'Poppins', cursive;   
+}
+
+header h1{
+	font-family: 'Poppins', cursive;
+	font-weight:bold;
+	font-size: 4em;
+	color: #fff;
+}
+header p{
+    font-family: 'Poppins', cursive;
+	color: #fff;
+}
+/*Header finish*/
+
+/*Nav Bar*/
+#navbar {
+    background-color: #CF142B; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    overflow:hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+
+#navbar ul{
+	list-style: none;
+	padding: 0;
+	
+}
+
+#navbar ul li{
+	list-style: none;
+	margin:1em 4em;
+	padding: 0;
+    display: inline;
+
+}
+
+#navbar ul li a{
+	color:#000;
+	text-decoration:none;
+	font-size: 1.06em;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 10px;
+	display: inline-block;
+	
+}
+
+
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+	color: #002868;
+	text-decoration: none;
+}
+
+a:visited{
+    color: #fff;
+	text-decoration: none;
+}
+
+.navbar a:link{
+    color: #fff;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	color: #002868;
+	text-decoration: none;
+}
+
+.navbar a:visited{
+    color: #fff;
+	text-decoration: none;
+}
+
+aside{
+	width: 25%;
+    padding:1.3% 2.5%;
+	float: left;
+    background-color: #fff;
+    border: 2px solid #CF142B;
+}
+
+article{
+	width:70%;
+    padding:1.3% 2.5% 1.3% 5%;
+	background: #fff;
+	float:left;
+    margin: 0 auto !important;
+	
+}
+
+.full article{
+	width:960px;
+	padding: 2% 10px;
+	background: #fff;
+	float:none;	
+    display: block;
+    float: none;
+    position: relative;
+    margin: 0 auto !important;
+}
+
+.full h1{
+    text-align: center;
+}
+
+h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:bolder;
+	font-size: 2em;
+	color:#000;
+	
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size: 1.4em;
+	color:#00ade2;
+}
+
+a{
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	color: #004684;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Slabo 27px', serif; */
+	font-size: 1em;
+	color: #000; 
+}
+
+img{
+	float:left;
+    width: 300px;
+    height: auto;
+	padding-left:5px; 
+    padding-top: 10px;
+    padding-right:5px;
+    padding-bottom:10px;
+}
+
+
+footer{
+	width: 100%;
+	clear:both;
+	padding: 10px 100px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #CF142B;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #fff;
+    display:block;
+    margin:0 auto;
+}
+
+.footer{
+    margin:0 auto;
+    display:block;
+    position: relative;
+    
+}
+
+.like{
+    display:block;
+    float:none;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+/*
+.fb-like-container {
+  position: center;
+  padding: 0;
+  padding-top: 55px;
+}
+.fb-like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.mobileonly{
+    display: none;
+}
+
+/*Back to top*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    height:auto;
+    width: 50px;
+    z-index: 99;
+    font-size: 18px; 
+    background-color: #CF142B;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #CF142B;
+}
+
+#myBtn:hover {
+  background-color: #00247D;
+}
+
+/*Image Gallery*/
+.notcontainer {
+    position: relative;
+    width: auto;
+    float: left;
+    margin: 5px;
+}
+
+.image {
+    float: left;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.notcontainer:hover .image {
+  opacity: 0.3;
+}
+
+.notcontainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #5796c6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+    font-family:'Raleway', sans-serif;
+}
+
+/*Login page*/
+
+.log div {
+    width: 300px;
+    background: transparent;
+    margin: auto;
+    position: relative;
+    float: none;
+    padding: 5px 0 0 0;
+}
+
+.log{
+    background-color:#000;
+    background-image: url(../images/seattle_view.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    
+}
+
+.log h1{
+    font-size: 6em;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+input[type=text], input[type=password] {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CF142B;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #00247D;
+    opacity:0.6;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; 
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #00247D;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+::placeholder { /* Colours placeholder text*/
+    color: #000;
+    font-family: 'Roboto', sans-serif; 
+    opacity: 1; /* Firefox */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+Contact
+
+.contact h1{
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    padding: 1px;   
+}
+
+.contact input[type=text], textarea {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CF142B;
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.printonly{
+    display: none;
+}
+
+@media print{
+
+	body {
+		color: #333333;
+		font-family: Georgia, 'Times New Roman', serif;
+		font-size: 1em;
+	}
+
+	h2 {
+		color: #1048a8;
+	}
+
+	.noprint {
+		display: none;
+	}
+
+	.printonly {
+		display: block;
+}
+}
+

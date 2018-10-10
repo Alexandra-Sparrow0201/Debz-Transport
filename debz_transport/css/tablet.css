@@ -1,0 +1,36 @@
+article {
+	width: 60%;
+	float: left;
+	margin-left: 1em;
+}
+
+aside {
+	width: 30%;
+	float: right;
+	margin-right: 1em;
+	margin-top: 1.5em;
+}
+
+aside img {
+	max-width: 100%;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+footer li {
+	display: inline;
+}
+
+footer a {
+	display: inline-block;
+}
+
+
+
+
+
+
+

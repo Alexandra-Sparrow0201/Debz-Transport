@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>Login</title>
+		<meta name= "description" content= "This page is the login page for Nerds in America."/>
+		<meta name ="coypright" content = "coypright Alexandra Hall 2018"/>
+		<meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome-1"/>
+		<link rel="stylesheet" type= "text/css" href="css/default.css"/>
+        <link rel="stylesheet" href="css/mobile.css" media="only all and (max-width: 480px)" />
+        <link rel="stylesheet" href="css/tablet.css" media="only all and (min-width: 481px)" />
+        <link rel="stylesheet" href="css/default.css" media="only all and (min-width: 960px)" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	</head>
+	<body class= "log" class="noprint">
+        <div>
+            
+            <h1>Login</h1>
+
+            <form id="login-form">
+                <p>
+<!--                    <label>Username</label>-->
+                    <input type="text" id="username" placeholder="Username"/>
+                </p>
+
+                <p>
+<!--                    <label>Password</label>-->
+                    <input type="password" id="password" placeholder="Password"/>
+                </p>
+
+                <p>
+                    <button type="submit">Login</button>
+                </p>
+            </form>
+
+            <script>
+                //alert(window.location);
+                //console.log(document);
+
+                var usernameInput = document.querySelector('#username');
+                var passwordInput = document.querySelector('#password');
+                var form = document.querySelector('#login-form');
+
+                var appUser = 'admin';
+                var appPassword = 'word';
+
+                // Javascript can detect many events, eg: onsubmit, onmouseover, onclick
+                form.onsubmit = function(event) {
+                    // Stop the default event action (in this case, submitting a form reloads the page)
+                    event.preventDefault();
+                    //console.log(event);
+
+                    // the value of an input is whatever the user has typed in
+                    var username = usernameInput.value;
+                    var password = passwordInput.value;
+
+                    if(username == appUser && password == appPassword) {
+                        // Success message
+                        //alert('Login successful');
+                        // Add to localStorage
+                        localStorage.setItem('loggedIn', true);
+                        // Redirect
+                        window.location = 'index.php';
+                    } else {
+                        alert('Login failed');
+                    }
+                }
+
+            </script>
+        </div>
+	</body>
+</html>
