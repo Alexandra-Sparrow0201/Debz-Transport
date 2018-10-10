@@ -38,7 +38,7 @@ header h1{
 }**/
 
 .hero-image {
-    background-image: url("../images/seattle_view.jpg");
+    background-image: url("../images/logo_crop.png");
     /* Set a specific height */
     height: 70%;
     /* Position and center the image to scale nicely on all screens */
@@ -46,7 +46,7 @@ header h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding: 200px;
+    padding: 250px 200px;
 }
 
 .hero-text {
@@ -55,7 +55,8 @@ header h1{
     top: 50%;
     left: 50%;
     /**transform: translate(-50%, -50%);**/
-    font-family: 'Poppins', cursive;   
+    font-family: 'Poppins', cursive;
+    opacity: 0.0;
 }
 
 header h1{
@@ -143,7 +144,7 @@ aside{
     padding:1.3% 2.5%;
 	float: left;
     background-color: #fff;
-    border: 2px solid #CF142B;
+    border: 2px solid #6aba24;
 }
 
 article{
@@ -326,41 +327,20 @@ footer{
     font-family:'Raleway', sans-serif;
 }
 
-/*Login page*/
+/*Contact*/
 
-.log div {
-    width: 300px;
-    background: transparent;
-    margin: auto;
-    position: relative;
-    float: none;
-    padding: 5px 0 0 0;
-}
-
-.log{
-    background-color:#000;
-    background-image: url(../images/seattle_view.jpg);
-    position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    
-}
-
-.log h1{
-    font-size: 6em;
+.contact h1{
+    font-size: 1.6em;
     color: white;
     text-align: center;
-    padding: 5px;
-    
+    padding: 1px;   
 }
 
-input[type=text], input[type=password] {
+.contact input[type=text], textarea {
     background-color: transparent;
     color: white;
-    border: 2px solid #CF142B;
-    width: 100%;
+    border: 2px solid #6aba24;
+    width: 90%;
     padding: 10px;
     margin: 5px;
     font-size: 1em;
@@ -389,29 +369,6 @@ button[type=submit] {
     opacity: 1; /* Firefox */
     text-decoration: none;
     font-weight: 500;
-}
-
-
-Contact
-
-.contact h1{
-    font-size: 1.6em;
-    color: white;
-    text-align: center;
-    padding: 1px;   
-}
-
-.contact input[type=text], textarea {
-    background-color: transparent;
-    color: white;
-    border: 2px solid #CF142B;
-    width: 90%;
-    padding: 10px;
-    margin: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    outline: none;
 }
 
 .printonly{

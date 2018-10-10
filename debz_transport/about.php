@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang= "en" dir="ltr">
 	<head>
-        <script src="check-login.js"></script>
 		<meta name="viewport" content="width=device-width"/>
 		<meta charset= "UTF-8"/>
 		<title>Nerds in America</title>
@@ -31,9 +30,8 @@
         <div id= "navbar" class="navbar">
             <ul class="noprint"> <!-- NOte that 'a href' below is a page link and closes with a '</a>'. 'li' is a line element so this makes an unordered list of links which are then styles in css.styles-->
                 <li><a href= "index.php">Home</a></li>
-                <li><a href= "america.html">America</a></li>
+                <li><a href= "about.php">About</a></li>
                 <li><a href= "gallery.php">Gallery</a></li>
-                <li><a href= "logout.html">Logout</a></li>
             </ul>
             
         </div>
